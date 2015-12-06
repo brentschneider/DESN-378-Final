@@ -21,14 +21,14 @@ label {
     height: auto;
 }
 
-/* LAYOUT STYLES -- These are some useful classes which I will need
+
+
+/* LAYOUT STYLES --
 */
 
 .l-box {
     padding: 1em;
 }
-
-
 
 .l-box-lrg {
     padding: 2em;
@@ -38,6 +38,7 @@ label {
 .is-center {
     text-align: center;
 }
+
 
 
 /* PURE FORM STYLES -- Style the form inputs and labels */
@@ -55,21 +56,55 @@ label {
     margin-bottom: 1em;
 }
 
-/* PURE BUTTON STYLES -- I want my pure-button elements to look a little different */
+/* BUTTON STYLES 
+*/
 
-.pure-button {
-    background-color: #1f8dd6;
-    color: white;
-    padding: 0.5em 2em;
-    border-radius: 5px;
+button {
+    background-color: #ededed;
+    padding: .4em 1.5em;
+    border-radius: 6px;
+    
+    border: 2px solid #716c6a;
+    -webkit-box-shadow: 0px 3px 0px rgba(127, 127, 127, 0.75);
+    -moz-box-shadow:    0px 3px 0px rgba(127, 127, 127, 0.75);
+    box-shadow:         0px 3px 0px rgba(127, 127, 127, 0.75);
+
+    color: #8f8f8f;
+    cursor: pointer;
 }
 
-a.pure-button-primary {
-    background: white;
+button:hover {
+    
     color: #1f8dd6;
-    border-radius: 5px;
-    font-size: 120%;
+    background-color: #fff;
 }
+
+button:active {
+    margin-top: 1px;
+    border: 2px solid #716c6a;
+    -webkit-box-shadow: 0px 1px 0px rgba(127, 127, 127, 0.75);
+    -moz-box-shadow:    0px 1px 0px rgba(127, 127, 127, 0.75);
+    box-shadow:         0px 1px 0px rgba(127, 127, 127, 0.75);
+}
+
+/*
+
+    .pure-button {
+        background-color: #1f8dd6;
+        color: white;
+        padding: 0.5em 2em;
+        border-radius: 5px;   
+    }
+
+
+    a.pure-button-primary {
+        background: white;
+        color: #1f8dd6;
+        border-radius: 5px;
+        font-size: 120%;
+    }
+
+*/
 
 
 /* MENU STYLES -- I want to customize how my .pure-menu looks at the top of the page */
@@ -99,16 +134,23 @@ a.pure-button-primary {
     color: white;
 }
 
-.home-menu a {
+.home-menu a:link {
     color: #6FBEF3;
 }
 .home-menu li a:hover,
-.home-menu li a:focus {
+.home-menu li a:focus,
+.home-menu li a:visited
+{
     background: none;
     border: none;
     color: #AECFE5;
 }
 
+
+.menu-active {
+    color: #fff !important;
+    text-decoration: none;
+}
 
 /*
  * -- SPLASH STYLES --
@@ -124,7 +166,7 @@ a.pure-button-primary {
     top: 0;
     left: 0;
     position: fixed !important;
-    background: #676777 url('../../img/VinyardSummerMerlot.jpg') no-repeat center;
+    background: #676777 url('../img/VinyardSummerMerlot.jpg') no-repeat center;
     background-size: cover;
     
 }
@@ -155,9 +197,9 @@ a.pure-button-primary {
     font-weight: 100;
     border-radius: 5px;
     line-height: 1em;
-    
-    
 }
+
+
 
 
 /* This is the subheading that appears on the blue section */
@@ -214,6 +256,8 @@ a.pure-button-primary {
     background: #111;
 }
 
+
+
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
  * On tablets and other medium-sized devices, we want to customize some
@@ -262,6 +306,9 @@ a.pure-button-primary {
     }
 
 }
+
+
+
 
 /*
  * -- DESKTOP (AND UP) MEDIA QUERIES --
