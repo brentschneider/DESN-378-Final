@@ -353,159 +353,175 @@ button:active {
 
 /* SPLASH STYLES
  */
-
 .splash-container {
-    z-index: 1;
-    overflow: hidden;
-    /* The following styles are required for the "scroll-over" effect */
-    width: 100%;
-    height: 75%;
-    top: 0;
-    left: 0;
-    position: fixed !important;
-    background: #676777 url('../img/VinyardSummerMerlot.jpg') no-repeat center;
-    background-size: cover;
-    
+  z-index: 1;
+  overflow: hidden;
+/* The following styles are required for the "scroll-over" effect */
+  width: 100%;
+  height: 75%;
+  top: 0;
+  left: 0;
+  position: fixed !important;
+  background: #676777 url(../img/VinyardSummerMerlot.jpg) no-repeat center;
+  background-size: cover;
 }
 
 .splash {
-    /* absolute center .splash within .splash-container */
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-    text-align: center;
-    text-transform: lowercase;
-     
-    width: 50%;
-    height: 60%;
-    margin: 20% auto;
+/* absolute center .splash within .splash-container */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  text-transform: lowercase;
+  width: 50%;
+  height: 60%;
+  margin: 20% auto;
 }
 
 .logo-splash {
-    width: 220px;
-    height: 220px;
+  width: 220px;
+  height: 220px;
 }
 
 .o {
-    font-size: 70%;
-    font-weight: bold;
-    
-    line-height: 110%;
-    position: relative;
-    top: -4px;
-    border-bottom: 2px solid #fff;
+  font-size: 70%;
+  font-weight: 700;
+  line-height: 110%;
+  position: relative;
+  top: -4px;
+  border-bottom: 2px solid #fff;
 }
 
 .splash-head {
-    
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    border-radius: 5px;
-    line-height: 1em;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  line-height: 1em;
 }
 
 .splash-subhead {
   font-size: 20px;
-    color: white;
-    letter-spacing: 0.05em;
-    opacity: 1;
+  color: #fff;
+  letter-spacing: .05em;
+  opacity: 1;
 }
 
 /* These styles are required for the "scroll-over" effect */
 .content-wrapper {
-    
-    position: absolute;
-    top: 70%;
-    width: 100%;
-    min-height: 12%;
-    z-index: 2;
-    background: white;
-
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  min-height: 12%;
+  z-index: 2;
+  background: #fff;
 }
 
 /* This is the class used for the main content headers (<h2>) */
 .content-head {
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin: 2em 0 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin: 2em 0 1em;
 }
 
 /* This is a modifier class used when the content-head is inside a ribbon */
 .content-head-ribbon {
-    color: white;
+  color: #fff;
 }
 
 .content-subhead {
-    color: #34495e;
-}
-.content-subhead i {
-    margin-right: 7px;
+  color: #34495e;
 }
 
-.splash-subhead, .splash-head, .content-head {
-font-family: 'Bitter', serif;
-   
+.content-subhead i {
+  margin-right: 7px;
 }
+
+.splash-subhead,.splash-head,.content-head {
+  font-family: 'Bitter',serif;
+}
+
 /* This is the class used for the dark-background areas. */
 .ribbon {
-    background: #a12032;
+  background: #a12032;
 /*    color: #aaa;*/
-    color: #e9e4e4;
+  color: #e9e4e4;
 }
-
 
 /********************
  Slides
 *******************/
+/*Slides*/
+/*
+.slides {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto 40px;
+}
+.slide {
+  width: 100%;
+  height: 100%;
+}
+.slide h2 {
+  margin: 25% 0 20px;
+  color: #fff;
+}
+.slide p {
+  width: 60%;
+  margin: 0 20% 40px;
+  font-size: 26px;
+  color: #fff;
+}
+.slide .button {
+  color: #fff;
+  border-color: #fff;
+  opacity: .6;
+}
+.slide .button:hover {
+  opacity: 1;
+}
+.slide img {
 
+}
+*/
+.blue {
+  background: #3E89BE;
+}
+.orange {
+  background: #F8835A;
+}
+.green {
+  background: #5ECE7F;
+}
+.yellow {
+  background: #FFD365;
+}
 
-
-      .slides {
-        width: 100%;
-        height: 100%;
-        margin: 0 auto 40px;
-      }
-      .slide {
-        width: 100%;
-        height: 100%;
-      }
-      .slide h2 {
-        margin: 25% 0 20px;
-        color: #fff;
-      }
-      .slide p {
-        width: 60%;
-        margin: 0 20% 40px;
-        font-size: 26px;
-        color: #fff;
-      }
-      .slide .button {
-        color: #fff;
-        border-color: #fff;
-        opacity: .6;
-      }
-      .slide .button:hover {
-        opacity: 1;
-      }
-      .slide img {
-        width: 50%;
-        margin: 100px 50% 100px 10%;
-      }
-      .blue {
-        background: #3E89BE;
-      }
-      .orange {
-        background: #F8835A;
-      }
-      .green {
-        background: #5ECE7F;
-      }
-      .yellow {
-        background: #FFD365;
-      }
-
-
+/* slides Grid*/
+.grid-full {
+  width: 100%;
+  float: left;
+}
+.grid-half {
+  width: 50%;
+  float: left;
+}
+.grid-third {
+  width: 27.33333%;
+  margin: 0 3%;
+  float: left;
+}
+.grid-fourth {
+  width: 25%;
+  float: left;
+}
+.grid-fifth {
+  width: 20%;
+  float: left;
+}
 
 
 /********************
@@ -514,95 +530,91 @@ font-family: 'Bitter', serif;
 
 
 
+
 .footer {
-    background: #111;
-    color:darkgray;
-    min-height: 225px;
-}
-.footer h1, 
-.footer h2, 
-.footer h3, 
-.footer h4, 
-.footer h5, 
-.footer h6, 
-.footer label {
-    color: #a12032;
+  background: #111;
+  color: #a9a9a9;
+  min-height: 225px;
 }
 
+.footer h1,.footer h2,.footer h3,.footer h4,.footer h5,.footer h6,.footer label {
+  color: #a12032;
+}
 
 .footer ul {
   margin: 0;
   padding: 0;
 }
+
 .footer ul li {
   list-style: none;
   word-spacing: 1em;
   display: inline;
 }
 
-.footer a:link,
-.footer a:visited {
+.footer a:link,.footer a:visited {
   color: #bed2df;
   text-decoration: none;
 }
 
-.footer a:hover,
-.footer a:focus {
+.footer a:hover,.footer a:focus {
   background: none;
   border: none;
   color: #61b0e4;
 }
 
 /*love*/
-
 .footer h {
-  color:crimson;
+  color: #dc143c;
 }
+
 
 /********************
  MEDIA QUERIES
 *******************/
 
-@media (min-width: 48em) {
 
-    /* We increase the body font size */
-    body {
-        font-size: 16px;
-    }
-    /* We want to give the content area some more padding */
-    .content {
-        padding: 1em;
-    }
-    /* We can align the menu header to the left, but float the
-    menu items to the right. */
-    .home-menu {
-        text-align: left;
-    }
-    .home-menu ul {
-        float: right;
-    }
-    .splash {
+@media (min-width: 48em) {
+  /* We increase the body font size */
+  body {
+    font-size: 16px;
+  }
+
+  /* We want to give the content area some more padding */
+  .content {
+    padding: 1em;
+  }
+
+  /* We can align the menu header to the left, but float the
+      menu items to the right. */
+  .home-menu {
+    text-align: left;
+  }
+
+  .home-menu ul {
+    float: right;
+  }
+
+  .splash {
     width: 80%;
     height: 60%;
     margin: 10% auto;
+  }
 
-    }
-    .splash-head {
-        font-size: 250%;
-    }
-    
-
+  .splash-head {
+    font-size: 250%;
+  }
 }
 
 @media (min-width: 78em) {
-    /* We increase the header font size even more */
-    .splash-head {
-        font-size: 300%;
-    }    
+  /* We increase the header font size even more */
+  .splash-head {
+    font-size: 300%;
+  }
 }
 
 @media (min-width: 1200px) {
-    .grid-container {
-        max-width: 1100px;
-    }
+  .grid-container {
+    max-width: 1100px;
+  }
 }
