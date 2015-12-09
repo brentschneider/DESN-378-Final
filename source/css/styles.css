@@ -63,6 +63,10 @@ a:visited
 
 }
 
+.l-left-lrg {
+  margin-left: 4em;
+}
+
 .is-center {
     text-align: center;
 }
@@ -462,7 +466,7 @@ button:active {
 
 
 .winebg {
-  background: url('../img/corks.png') center no-repeat;
+  background: url('../img/common/corks.png') center no-repeat;
   background-size: cover;
 }
 
@@ -472,6 +476,18 @@ button .slick-prev{
 	box-shadow: none;
 }
 
+.slide h2 {
+  font-family: 'Bitter',serif;
+  font-size: 1.6em;
+  color: black;
+  padding-top: 40%;
+}
+
+.slide p {
+  color: #333;
+  font-size: 1.1em;
+  line-height: 140%;
+}
 
 
 
