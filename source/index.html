@@ -14,11 +14,11 @@
   
   <!--    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">-->
   
-  
+
   
   <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
-
+  
   <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
@@ -111,63 +111,52 @@
    
    <div class="pure-u-1 pure-u-md-3-5">
         <div class="l-box is-left">
-            <h3>Three-Fifth Column</h3>
+            <h3>Our Family of wines</h3>
 
 
 
             <div class="slides">
 
-              <div class="slide blue">
+              
                
-                <div class="grid-half">
+              <!-- Slide 1-->
+                <div class="slide pure-g winebg">
+                <div class="pure-u-12-24 is-center">
                     <h2>2014 Merlot</h2>
                     <p>tasting note</p>
                     <a href="#" class="button">details</a>
                 </div>
-                <div class="grid-half">
-                    <img src="https://placeholdit.imgix.net/~text?txtsize=45&txt=425×650&w=425&h=650" alt="" />
+                <div class="pure-u-12-24">
+                    <img src="img/wine/Lake-Roosevelt-2012-Pieces.png" alt="" />
                 </div>
                 
               </div><!--/Slide 1-->
 
-                <div class="slide orange">
-                
-                <div class="grid-half">
+              <!-- Slide 2-->
+                <div class="slide pure-g winebg">
+                <div class="pure-u-12-24">
                     <h2>2014 Merlot</h2>
                     <p>tasting note</p>
                     <a href="#" class="button">details</a>
                 </div>
-                <div class="grid-half">
-                    <img src="https://placeholdit.imgix.net/~text?txtsize=45&txt=425×650&w=425&h=650" alt="" />
+                <div class="pure-u-12-24">
+                    <img src="img/wine/Lake-Roosevelt-2012-Pieces.png" alt="" />
                 </div>
-              
-                </div><!--/Slide 2-->
-
-                <div class="slide green">
                 
-                <div class="grid-half">
+              </div><!--/Slide 2-->
+               
+               <!-- Slide 3 -->
+                <div class="slide pure-g winebg">
+                <div class="pure-u-12-24">
                     <h2>2014 Merlot</h2>
                     <p>tasting note</p>
                     <a href="#" class="button">details</a>
                 </div>
-                <div class="grid-half">
-                    <img src="https://placeholdit.imgix.net/~text?txtsize=45&txt=425×650&w=425&h=650" alt="" />
+                <div class="pure-u-12-24">
+                    <img src="img/wine/Lake-Roosevelt-2012-Pieces.png" alt="" />
                 </div>
-              
-                </div><!--/Slide 3-->
-
-                <div class="slide yellow">
                 
-                <div class="grid-half">
-                    <h2>2014 Merlot</h2>
-                    <p>tasting note</p>
-                    <a href="#" class="button">details</a>
-                </div>
-                <div class="grid-half">
-                    <img src="https://placeholdit.imgix.net/~text?txtsize=45&txt=425×650&w=425&h=650" alt="" />
-                </div>
-              
-                </div><!--/Slide 4-->
+              </div><!--/Slide 3-->
                 
                 
             </div>
@@ -348,7 +337,12 @@
       $('.slides').slick({
         arrows:   true,
         dots:     true,
-        lazyLoad: 'progressive'
+        lazyLoad: 'progressive',
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
       });
     });
 </script>

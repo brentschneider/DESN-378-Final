@@ -71,6 +71,11 @@ a:visited
   text-align: left;
 }
 
+
+.is-right {
+  text-align: right;
+}
+
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -454,74 +459,20 @@ button:active {
 /********************
  Slides
 *******************/
-/*Slides*/
-/*
-.slides {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto 40px;
-}
-.slide {
-  width: 100%;
-  height: 100%;
-}
-.slide h2 {
-  margin: 25% 0 20px;
-  color: #fff;
-}
-.slide p {
-  width: 60%;
-  margin: 0 20% 40px;
-  font-size: 26px;
-  color: #fff;
-}
-.slide .button {
-  color: #fff;
-  border-color: #fff;
-  opacity: .6;
-}
-.slide .button:hover {
-  opacity: 1;
-}
-.slide img {
 
-}
-*/
-.blue {
-  background: #3E89BE;
-}
-.orange {
-  background: #F8835A;
-}
-.green {
-  background: #5ECE7F;
-}
-.yellow {
-  background: #FFD365;
+
+.winebg {
+  background: url('../img/corks.png') center no-repeat;
+  background-size: cover;
 }
 
-/* slides Grid*/
-.grid-full {
-  width: 100%;
-  float: left;
+button .slick-prev{
+  -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
 }
-.grid-half {
-  width: 50%;
-  float: left;
-}
-.grid-third {
-  width: 27.33333%;
-  margin: 0 3%;
-  float: left;
-}
-.grid-fourth {
-  width: 25%;
-  float: left;
-}
-.grid-fifth {
-  width: 20%;
-  float: left;
-}
+
+
 
 
 /********************
