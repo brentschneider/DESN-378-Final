@@ -11,36 +11,29 @@
   rel="stylesheet"><!--<![endif]-->
   <link href='https://fonts.googleapis.com/css?family=Bitter:700' rel=
   'stylesheet' type='text/css'>
-  
-  <!--    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">-->
-  
-
-  
   <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
-  
   <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
 
-
-
-<!-- Display the NAVIGATION --
+<!-- Display the NAVIGATION -->
 <navigation class="header">
-<!--
+
 
 <div class="home-menu yui3-g pure-menu-horizontal pure-menu-fixed">
-    <a class="pure-menu-heading" href="">LRW<span class="o">Co</span></a>
+    <a class="pure-menu-heading" href="/">LRW<span class="o">Co</span></a>
     <ul class="pure-menu-list">
       <li class="pure-menu-item">
-        <a class="pure-menu-link" href="#">The Wine</a>
+        <a class="pure-menu-link" href="/">Welcome</a>
       </li>
       <li class="pure-menu-item">
-        <a class="pure-menu-link" href="#">News & Events</a>
+        <a class="pure-menu-link" href="/wines.html">The Wine</a>
       </li>
       <li class="pure-menu-item">
-        <a class="pure-menu-link" href="#">Wine Club</a>
+        <a class="pure-menu-link" href="/contact.html">Contact us</a>
       </li>
+<!--
       <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
         <a class="pure-menu-link" href="#" id="menuLink1">History</a>
         <ul class="pure-menu-children">
@@ -61,26 +54,14 @@
       <li class="pure-menu-item">
         <a class="pure-menu-link" href="#">Cart</a>
       </li>
+-->
     </ul>
   </div>
--->
-<div class="custom-menu-wrapper">
-    <div class="pure-menu custom-menu custom-menu-top">
-        <a href="#" class="pure-menu-heading custom-menu-brand">LRW<span class="o">Co</span></a>
-        <a href="#" class="custom-menu-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
-    </div>
-    <div class="pure-menu pure-menu-horizontal pure-menu-scrollable custom-menu custom-menu-bottom custom-menu-tucked" id="tuckedMenu">
-        <div class="custom-menu-screen"></div>
-        <ul class="pure-menu-list">
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">About</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Blog</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">GitHub</a></li>
-            
-        </ul>
-    </div>
-</div>
+  <div class="pure-menu custom-menu custom-menu-top">
+  <a href="#" class="pure-menu-heading custom-menu-brand">LRW<span class="o">Co</span></a>
+  <a href="#" class="custom-menu-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a></div>
+
+
 </navigation>
 
 
@@ -91,7 +72,7 @@
     <div class="splash-head"><img alt="Lake Roosevelt Wine Co Logo" class=
     "logo-splash" src="img/common/LRWC-logo-white.png"></div>
     <p class="splash-subhead">Vineyard & Winery ~ Family Estate Wines</p>
-    <p class="l-box"><button>BROWSE OUR WINES</button></p>
+    <p class="l-box"><button onclick="window.location.href='/wines.html'">BROWSE OUR WINES</button></p>
   </header>
 </section>
 
@@ -103,7 +84,7 @@
 
 <!-- Info section, tasting room and Winery location -->
  <div class="content">
-  <h2 class="content-head is-center">One Family. One Estate. One Passion.</h2>
+  <h2 class="content-head is-center">One Family ~ One Estate ~ One Passion.</h2>
   
   <div class="pure-g">
    
@@ -121,7 +102,7 @@
                
               <!-- Slide 1-->
                 <div class="slide pure-g winebg">
-                <div class="pure-u-10-24 is-center l-left-lrg">
+                <div class="pure-u-10-24 is-center left-40">
                     <h2>2013 Pieces of Red</h2>
                     <p>This wine is made in the style of the wines of the Cote Rotie in the upper Rhone Valley of France.</p>
                     <button >details</button>
@@ -135,7 +116,7 @@
 
               <!-- Slide 2-->
                 <div class="slide pure-g winebg">
-                <div class="pure-u-10-24 is-center l-left-lrg">
+                <div class="pure-u-10-24 is-center left-40">
                     <h2>2011 Cabernet Franc</h2>
                     <p>Our Cabernet Franc is a delicious example of the traditional Bordeaux varietal. </p>
                     <button >details</button>
@@ -148,7 +129,7 @@
                
                <!-- Slide 3 -->
                 <div class="slide pure-g winebg">
-                <div class="pure-u-10-24 is-center l-left-lrg">
+                <div class="pure-u-10-24 is-center left-40">
                     <h2>2011 Cabernet Sauvignon</h2>
                     <p>This complex and full-bodied Cabernet Sauvignon is a delicious , the multiple layers of chocolate, red currant and plum explode on the palate, finishing with hints of spices and herbs from the French oak. </p>
                     <button >details</button>
@@ -222,6 +203,15 @@
                     <td>Growing Season:</td>
                     <td>March to November</td>
                 </tr>
+                <tr>
+                    <td>Capacity:</td>
+                    <td>2,400 cases</td>
+                </tr>
+                <tr class="pure-table-odd">
+                    <td>Barrels</td>
+                    <td>288</td>
+                </tr>
+
             </tbody>
         </table>
       </div> <!-- end of right column-->
