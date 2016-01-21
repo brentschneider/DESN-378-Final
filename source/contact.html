@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="Final DESN 378" name="description">
-  <title>LRWco - Wine Selection</title>
+  <title>LRWco - Contact us </title>
   <link href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css" rel=
   "stylesheet"><!--[if gt IE 8]><!-->
   <link href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css"
@@ -15,6 +15,7 @@
   <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
   
   <link href="css/styles.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -38,31 +39,35 @@
 
 
 <section class="content begin">
-    <h2 class="content-head is-center">Contact us</h2>
-
-     
-
+    <h2 class="content-head is-center">Contact us, we would like to hear from you</h2>
+  
     <div class="pure-g">
-      <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
-        
+      <div class="pure-u-3-8">
         
         <h4>SPOKANE TASTING ROOM AND WINE CLUB:</h4>
-        <p> 10 N. Post, Suite 8, <br>
+        <p><strong>10 N. Post, Suite 8</strong><br>
         Spokane, WA 99201<br>
         (509) 838-2427</p>
-        <p>Tasting room Manager: Lindsey</p>
+        <p>Tasting room Manager: Lindsey
+        <br>
+        <a class="tribe-events-gmap" href="http://maps.google.com/maps?f=q&#038;source=s_q&#038;hl=en&#038;geocode=&#038;q=8+N+Post+Street+Spokane+WA+99201+United+States" title="Click to view a Google Map" target="_blank">Google Map</a>			
+        </p>
+        <!-- Google Map Link -->
+				
         
         <h4>YURT, VINEYARD & WINERY: </h4>
-        <p>Lake Roosevelt <br>
+        <p><strong>Lake Roosevelt</strong><br>
         42399 Jump Canyon Road North<br>
         Creston, Washington 99117<br>
         (509) 636-2001</p>
         
         <p>Wine Maker: Michael</p>
+        
+        
 
         
       </div>
-       <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
+       <div class="pure-u-5-8">
         <form class="pure-form pure-form-stacked">
           <fieldset>
             <label for="firstName">First Name</label>
@@ -86,6 +91,35 @@
 		
 </section>
 
+
+<!-- Ribbon the winery -->
+<section class="ribbon-tan l-box-lrg pure-g">
+  <!-- <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+    <img alt="File Icons" class="pure-img-respons--ive" src=
+  "img/WineryCaynonView.jpg" width="300"></div>-->
+  <div class="pure-u-1 pure-u-md-1 pure-u-lg-1">
+    <h2 class="content-head content-head-ribbon">The winery</h2>
+    
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+    <div id="gmap_canvas" class="gmap"></div>
+    <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+    </div>
+    <script type="text/javascript"> function init_map(){var myOptions = {zoom:15, minZoom:15, maxZoom: 15,center:new google.maps.LatLng(47.8692295,-118.54642180000002),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(47.8692295, -118.54642180000002)});infowindow = new google.maps.InfoWindow({content:"<b>Lake Roosevelt Wine Co</b><br/>42399 Jump Canyon Road North<br/>99117 Creston" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+
+
+    </script>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
 <div class="clearfix"> </div>
 
 <!-- Footer -->
@@ -103,6 +137,7 @@
       <br />
       <p>Made with <h>♥</h> in the Pacific Northwest.<br />      
       42399 Jump Canyon Road North, Creston, WA 99117<br />
+      
       <script>
         function myFunction() {
             var d = new Date();
@@ -145,6 +180,7 @@
       });
     });
 </script>
+
 
 </body>
 </html>
